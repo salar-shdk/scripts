@@ -6,7 +6,7 @@ notify2.init('login service')
 url = 'https://internet.ut.ac.ir/login'
 check_url = 'http://acct.ut.ac.ir/IBSng/user/'
 
-data_list = json.loads(open('ut_accounts.json').read()) 
+data_list = json.loads(open('/home/salar/scripts/ut_accounts.json').read()) 
 
 def check_remaining_charge(data):
     data['normal_username'] = data['username']
