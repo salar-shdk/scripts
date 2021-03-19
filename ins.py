@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from instagram_private_api import Client, ClientCompatPatch
+#from instagram_private_api import Client, ClientCompatPatch
 
 if __name__ == "__main__":
     args = sys.argv[1:]

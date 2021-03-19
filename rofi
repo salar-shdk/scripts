@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+setxkbmap us
+rofr.sh -r

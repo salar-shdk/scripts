@@ -1,0 +1,6 @@
+#!/bin/sh
+
+touch asjnfhbsfm
+
+echo "ehfbehbghebgheb" | xclip -sel clip
+xclip -selection clipboard

@@ -18,6 +18,12 @@ def get_ip():
         s.close()
     return IP
 
+public_ip= requests.get('https://api.ipify.org/').content
+f= open('/home/salar/scripts/bin/public_ip_temp.txt','w')
+public_ip = public_ip.decode()
+print(public_ip)
+f.write(str(public_ip))
+
 local_ip = get_ip()
 f= open('/home/salar/scripts/bin/public_ip_temp.txt','r')
 public_ip = f.read()
@@ -27,9 +33,3 @@ print(public_ip , local_ip)
 n = notify2.Notification('Network Info', 'local ip : {}\npublic ip : {}\n'.format(local_ip,public_ip))
 n.show()
 
-
-public_ip= requests.get('https://api.ipify.org/').content
-f= open('/home/salar/scripts/bin/public_ip_temp.txt','w')
-public_ip = public_ip.decode()
-print(public_ip)
-f.write(str(public_ip))
